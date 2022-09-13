@@ -681,7 +681,7 @@ char **line = gpl;
 unsigned char cols, rows;
 
 void
-promt(char *text)
+prompt(char *text)
 {
   cputs("\r\n");
   cputs(text);
@@ -707,9 +707,9 @@ main(void)
     cputs("\r\n");
     if (wherey() == rows)
     {
-      promt("                                --MORE--");
+      prompt("                                --MORE--");
     }
   }
 
-  promt("                            --END OF LICENSE--");
+  prompt("                            --END OF LICENSE--");
 }
